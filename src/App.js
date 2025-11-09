@@ -1,6 +1,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
 import BusDetailPage from "./pages/BusDetailPage";
 import BusRoutesPage from "./pages/BusRoutesPage";
 import TimetablePage from "./pages/TimetablePage";
@@ -9,7 +11,9 @@ import Layout from "./components/Layout";
 
 function App() {
   return (
+    <Router basename="/Nitte-Bus-Tracker">
     <Routes>
+      <Route path="/" element={<HomePage />} />
       <Route path="/" element={<Layout />}>
         <Route index element={<Dashboard />} />
         <Route path="bus/:busId" element={<BusDetailPage />} />
@@ -18,6 +22,7 @@ function App() {
         <Route path="about" element={<AboutPage />} />
       </Route>
     </Routes>
+    </Router>
   );
 }
 
