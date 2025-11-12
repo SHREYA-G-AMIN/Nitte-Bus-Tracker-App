@@ -32,9 +32,8 @@ Built with a clean and responsive interface, the system aims to make campus tran
         <section className="about-section">
           <h2>🧠 Technologies Used</h2>
           <div className="tech-stack">
-            <span>React.js</span>
-            <span>Leaflet.js</span>
-            <span>React Router</span>
+            <span>HTML</span>
+            <span>Javascript</span>
             <span>JSON Data</span>
             <span>CSS3</span>
           </div>
